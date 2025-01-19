@@ -116,7 +116,7 @@ if [ -e /root/pterodactyl ]; then
     sudo rm -rf /root/pterodactyl
   fi
   wget -q "$THEME_URL"
-  sudo unzip -o "$(basename "$THEME_URL")"
+  sudo tar xzvf "$(basename "$THEME_URL")"
   
 if [ "$SELECT_THEME" -eq 1 ]; then
   echo -e "                                                       "
